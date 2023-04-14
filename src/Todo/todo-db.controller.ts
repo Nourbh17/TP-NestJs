@@ -8,7 +8,9 @@ import { TodoStatusEnum } from './Enums/todos-status.enum';
 import { PaginationDto } from './dto/pagination.dto';
 
 
-@Controller('tododb')
+@Controller({
+  path: 'todo',
+  version: '2',})
 export class TodoDbController {
     constructor(private newtodoService: NewtodoService) {
     }

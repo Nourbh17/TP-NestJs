@@ -6,7 +6,9 @@ import { TodoService } from "./todo.service";
 import { Todo } from "./Model/todo-model";
 
 
-@Controller('todo')
+@Controller({
+path: 'todo',
+version: '1',})
 export class TodoController {
   constructor(private todoService: TodoService) {
   }
